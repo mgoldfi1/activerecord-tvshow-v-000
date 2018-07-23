@@ -25,7 +25,7 @@ def self.popular_shows
 end
 
 def self.shows_by_alphabetical_order
-self.all.sort
+self.all.sort_by{|x| x.name}
 end
 
 
